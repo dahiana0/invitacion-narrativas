@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Invitación · Narrativas Ilustradas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="crane" viewBox="0 0 100 80">
+    <polygon points="50,40 6,16 38,48" fill="var(--a)"/>
+    <polygon points="50,40 94,12 62,48" fill="var(--b)"/>
+    <polygon points="32,46 50,40 68,48 50,68" fill="var(--c)"/>
+    <polygon points="32,46 10,62 38,53" fill="var(--d)"/>
+    <polygon points="68,48 80,26 74,52" fill="var(--d)"/>
+    <polygon points="80,26 97,22 82,33" fill="var(--a)"/>
+  </symbol>
+  <symbol id="butterfly" viewBox="0 0 100 80">
+    <polygon points="50,40 4,6 24,46" fill="var(--a)"/>
+    <polygon points="50,40 24,46 34,74" fill="var(--b)"/>
+    <polygon points="50,40 96,6 76,46" fill="var(--a)" opacity=".88"/>
+    <polygon points="50,40 76,46 66,74" fill="var(--b)" opacity=".88"/>
+    <rect x="47.5" y="28" width="5" height="32" rx="2.5" fill="var(--c)"/>
+    <path d="M48 29 L40 16 M52 29 L60 16" stroke="var(--c)" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="boat" viewBox="0 0 100 70">
+    <polygon points="48,4 48,42 14,42" fill="var(--a)"/>
+    <polygon points="52,12 52,42 88,42" fill="var(--b)"/>
+    <polygon points="4,46 96,46 78,66 22,66" fill="var(--c)"/>
+    <polygon points="4,46 96,46 92,51 8,51" fill="var(--d)"/>
+  </symbol>
+</svg>
+
+<div class="stage" id="stage">
+  <div class="book" id="book">
+
+    <div class="page" aria-hidden="true">
+      <svg class="bg" viewBox="0 0 100 145" preserveAspectRatio="none">
+        <defs><polygon id="rayA" class="ray" points="62,9 64.6,21 59.4,21"/><polygon id="rayB" class="ray" points="62,14 63.8,21 60.2,21"/></defs>
+        <g transform="translate(62 50) scale(.7) translate(-62 -50)"><g class="rays"><g class="spin">
+          <use href="#rayA"/><use href="#rayB" transform="rotate(22.5 62 50)"/><use href="#rayA" transform="rotate(45 62 50)"/><use href="#rayB" transform="rotate(67.5 62 50)"/>
+          <use href="#rayA" transform="rotate(90 62 50)"/><use href="#rayB" transform="rotate(112.5 62 50)"/><use href="#rayA" transform="rotate(135 62 50)"/><use href="#rayB" transform="rotate(157.5 62 50)"/>
+          <use href="#rayA" transform="rotate(180 62 50)"/><use href="#rayB" transform="rotate(202.5 62 50)"/><use href="#rayA" transform="rotate(225 62 50)"/><use href="#rayB" transform="rotate(247.5 62 50)"/>
+          <use href="#rayA" transform="rotate(270 62 50)"/><use href="#rayB" transform="rotate(292.5 62 50)"/><use href="#rayA" transform="rotate(315 62 50)"/><use href="#rayB" transform="rotate(337.5 62 50)"/>
+        </g></g>
+        <g class="sun"><circle cx="62" cy="50" r="27" fill="#EDAA25"/>
+        <circle cx="62" cy="50" r="19" fill="#E2573A" opacity=".9"/></g></g>
+        <path class="wv" style="--s:9s" d="M-50 96 Q-37.5 89 -25 96 T0 96 T25 96 T50 96 T75 96 T100 96 T125 96 T150 96 V145 H-50Z" fill="#6FB7AC"/>
+        <path class="wv" style="--s:6.5s;animation-direction:reverse" d="M-50 106 Q-37.5 113 -25 106 T0 106 T25 106 T50 106 T75 106 T100 106 T125 106 T150 106 V145 H-50Z" fill="#138A83"/>
+        
+        
+      </svg>
+
+      <div class="pop" style="--i:0;left:3%;top:42%;width:36%"><div class="fly glide" style="--dx:18%;--dy:-14%;--r:5deg;--t:11s">
+        <svg viewBox="0 0 100 80" style="--a:#E2573A;--b:#B83A24;--c:#F6F0E4;--d:#EDAA25"><use href="#crane"/></svg></div></div>
+
+      <div class="pop" style="--i:1;left:6%;top:6%;width:28%"><div class="fly glide" style="--dx:20%;--dy:12%;--r:-5deg;--t:12s">
+        <svg viewBox="0 0 100 80" style="--a:#17224D;--b:#2E3F8F;--c:#7B2D5B;--d:#F6F0E4"><use href="#crane"/></svg></div></div>
+
+      <div class="pop" style="--i:2;left:54%;top:41%;width:22%"><div class="fly flap" style="--dx:-40%;--dy:-30%;--r:8deg;--t:7s">
+        <svg viewBox="0 0 100 80" style="--a:#7B2D5B;--b:#C0527F;--c:#17224D"><use href="#butterfly"/></svg></div></div>
+
+      <div class="pop" style="--i:3;right:5%;top:5%;width:17%"><div class="fly flap" style="--dx:-35%;--dy:-25%;--r:-8deg;--t:8s">
+        <svg viewBox="0 0 100 80" style="--a:#EDAA25;--b:#E2573A;--c:#17224D"><use href="#butterfly"/></svg></div></div>
+
+      <div class="pop" style="--i:4;right:6%;top:50%;width:17%"><div class="fly flap" style="--dx:-35%;--dy:-35%;--r:7deg;--t:6.5s">
+        <svg viewBox="0 0 100 80" style="--a:#138A83;--b:#6FB7AC;--c:#17224D"><use href="#butterfly"/></svg></div></div>
+
+      <div class="pop" style="--i:5;left:30%;top:63.5%;width:36%"><div class="sail" style="--dx:40%;--t:13s">
+        <svg viewBox="0 0 100 70" style="--a:#F6F0E4;--b:#EDAA25;--c:#E2573A;--d:#7B2D5B"><use href="#boat"/></svg></div></div>
+
+      <div class="pop" style="--i:6;right:16%;top:70.5%;width:25%"><div class="sail" style="--dx:45%;--t:10s">
+        <svg viewBox="0 0 100 70" style="--a:#EDAA25;--b:#F6F0E4;--c:#138A83;--d:#17224D"><use href="#boat"/></svg></div></div>
+
+      <svg class="bg fg" viewBox="0 0 100 145" preserveAspectRatio="none">
+        <path class="wv" style="--s:5s" d="M-50 117 Q-37.5 110 -25 117 T0 117 T25 117 T50 117 T75 117 T100 117 T125 117 T150 117 V145 H-50Z" fill="#0C6670"/>
+        <path class="wv" style="--s:7.5s;animation-direction:reverse" d="M-50 128 Q-37.5 135 -25 128 T0 128 T25 128 T50 128 T75 128 T100 128 T125 128 T150 128 V145 H-50Z" fill="#17224D"/>
+      </svg>
+    </div>
+
+    <div class="cover" id="cover">
+      <div class="face front">
+        <div class="disc d1"></div><div class="disc d2"></div><div class="disc d3"></div>
+        <svg class="mini" viewBox="0 0 100 80" style="--a:#F6F0E4;--b:#D9CFBC;--c:#EDAA25;--d:#F6F0E4" aria-hidden="true"><use href="#crane"/></svg>
+
+        <h1>Narrativas Ilustradas</h1>
+        <p class="tag">Leer siempre ha sido una aventura. <span>Ahora también es una experiencia digital.</span></p>
+      </div>
+
+      <div class="face back">
+        <div class="inv">
+          <p class="kicker">¡Te invitamos a conocer</p>
+          <h2>Narrativas Ilustradas!</h2>
+          <p class="lead">Los aprendices de la ficha 3209613 del Tecnólogo en Producción de Multimedia presentan el resultado final de su proyecto formativo, una propuesta que integra creatividad, ilustración y animación digital.</p>
+          <div class="when">
+            <p class="date">Lunes 26 de octubre</p>
+            <p class="meta">10:00 a. m. a 12:00 m. &nbsp;·&nbsp; Ambiente 804</p>
+          </div>
+          <p class="where">Centro de Servicios y Gestión Empresarial – SENA</p>
+          <p class="close">¡Acompáñanos y descubre el resultado de este proceso formativo!</p>
+        </div>
+        <svg class="art" viewBox="0 92 100 53" preserveAspectRatio="none">
+          <defs><pattern id="dots" width="6" height="6" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r=".5" fill="#17224D" opacity=".22"/></pattern></defs>
+          <rect width="100" height="145" fill="url(#dots)"/>
+          <polygon points="0,145 0,92 38,145" fill="#7B2D5B"/>
+          <polygon points="0,145 22,106 70,145" fill="#E2573A"/>
+          <polygon points="26,145 62,98 100,145" fill="#138A83"/>
+          <polygon points="58,145 100,112 100,145" fill="#EDAA25"/>
+          <line x1="12" y1="14" x2="12" y2="60" stroke="#17224D" stroke-width=".5" opacity=".5"/>
+          <line x1="12" y1="14" x2="40" y2="14" stroke="#17224D" stroke-width=".5" opacity=".5"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+
+<button id="toggle" type="button" aria-expanded="false" aria-controls="stage">Abrir invitación</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>
